@@ -1,0 +1,16 @@
+node_modules/
+# dist/ - keeping dist for direct GitHub usage
+*.log
+.DS_Store
+.env
+.env.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+coverage/
+.nyc_output/
+.vscode/
+.idea/
+*.swp
+*.swo
+*~

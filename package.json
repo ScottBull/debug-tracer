@@ -1,0 +1,56 @@
+{
+  "name": "debug-tracer",
+  "version": "1.1.0",
+  "description": "A simple, powerful debug logging utility for Node.js and browsers with file output support",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "browser",
+    "bin"
+  ],
+  "bin": {
+    "debug-tracer": "./bin/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "node test/test.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "debug",
+    "logging",
+    "tracer",
+    "development",
+    "debugging",
+    "isomorphic",
+    "browser",
+    "node"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "exports": {
+    ".": {
+      "node": "./dist/index.js",
+      "browser": "./browser/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./browser": {
+      "default": "./browser/index.js",
+      "types": "./browser/index.d.ts"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ScottBull/debug-tracer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ScottBull/debug-tracer/issues"
+  },
+  "homepage": "https://github.com/ScottBull/debug-tracer#readme"
+}
